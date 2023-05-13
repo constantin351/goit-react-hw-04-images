@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-
 import { FiSearch } from "react-icons/fi";
 import { toast } from "react-toastify";
 

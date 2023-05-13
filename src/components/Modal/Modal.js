@@ -18,6 +18,7 @@ function Modal({ onClose, imgUrl}) {
         return () => window.removeEventListener('keydown', handleEscapeClick);
     }, [onClose])
     
+
     const handleBackdropClick = event => {
         if (event.currentTarget === event.target) {
             onClose();
@@ -38,10 +39,12 @@ function Modal({ onClose, imgUrl}) {
 Modal.propTypes = {
         onClose: PropTypes.func.isRequired,
         imgUrl: PropTypes.string.isRequired,
-    };
+};
 
 export default Modal;
 
+
+// CLASS component
 
 // class Modal extends Component { 
 //      static propTypes = {
